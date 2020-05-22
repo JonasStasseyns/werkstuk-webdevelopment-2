@@ -79,7 +79,7 @@
                 </div>
             @endif
 
-            <div class="content">
+            <div class="contet party">
                 <div class="title m-b-md">
                     Feestsaus
                 </div>

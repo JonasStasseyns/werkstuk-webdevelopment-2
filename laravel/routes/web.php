@@ -18,7 +18,7 @@ Route::get('/privacy', 'ContentController@getPrivacyPolicy')->name('privacy');
 
 Route::get('/contact', 'ContactController@getIndex')->name('contact');
 
-Route::get('/donate', 'MollieController@getIndex')->name('donate');
+Route::get('/donate', 'MollieController@getIndex')->name('donate.index');
+Route::post('/donate', 'MollieController@preparePayment')->name('donate.prepare');
 
-Route::get('/mollie-payment', 'MollieController@preparePayment')->name('mollie.payment');
 Route::get('/payment-success', 'MollieController@paymentSuccess')->name('payment.success');

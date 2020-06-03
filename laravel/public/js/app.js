@@ -787,24 +787,27 @@ module.exports = function dispatchRequest(config) {
       }
     }
 
-    return Promise.reject(reason);
+      return Promise.reject(reason);
   });
 };
 
 
-/***/ }),
+            /***/
+        }),
 
-/***/ "./node_modules/axios/lib/core/enhanceError.js":
+        /***/ ie"./node_modules/axios/lib/core/enhanceError.js"
+:
 /*!*****************************************************!*\
   !*** ./node_modules/axios/lib/core/enhanceError.js ***!
   \*****************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/
+(function (module, exports, __webpack_require__) {
 
-"use strict";
+    "use strict";
 
 
-/**
+    /**
  * Update an Error with the specified config, error code, and response.
  *
  * @param {Error} error The error to update.

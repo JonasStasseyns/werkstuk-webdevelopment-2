@@ -12,7 +12,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'ContentController@getHome')->name('home');
+Route::get('/about', 'ContentController@getAbout')->name('about');
+Route::get('/privacy', 'ContentController@getPrivacyPolicy')->name('privacy');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/contact', 'ContactController@getIndex')->name('contact');
+
+Route::get('/donate', 'MollieController@getIndex')->name('donate');
+
+Route::get('/mollie-payment', 'MollieController@preparePayment')->name('mollie.payment');
+Route::get('/payment-success', 'MollieController@paymentSuccess')->name('payment.success');

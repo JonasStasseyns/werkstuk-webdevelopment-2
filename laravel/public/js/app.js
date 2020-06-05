@@ -811,10 +811,10 @@ module.exports = function dispatchRequest(config) {
              * @param {Error} error The error to update.
              * @param {Object} config The config.
              * @param {string} [code] The error code (for example, 'ECONNABORTED').
- * @param {Object} [request] The request.
- * @param {Object} [response] The response.
- * @returns {Error} The error.
- */
+             * @param {Object} [request] The request.
+             * @param {Object} [response] The response.
+             * @returns {Error} The error.
+             */
 module.exports = function enhanceError(error, config, code, request, response) {
   error.config = config;
   if (code) {
@@ -19276,11 +19276,11 @@ module.exports = function(module) {
 /***/ }),
 
 /***/ "./resources/js/app.js":
-/*!*****************************!*\
-  !*** ./resources/js/app.js ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+        /*!*****************************!*\
+          !*** ./resources/js/app.js ***!
+          \*****************************/
+        /*! no static exports found */
+        /***/ (function (module, exports, __webpack_require__) {
 
             __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
@@ -19289,15 +19289,15 @@ module.exports = function(module) {
             /***/
         }),
 
-/***/ "./resources/js/bootstrap.js":
-/*!***********************************!*\
-  !*** ./resources/js/bootstrap.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+        /***/ "./resources/js/bootstrap.js":
+        /*!***********************************!*\
+          !*** ./resources/js/bootstrap.js ***!
+          \***********************************/
+        /*! no static exports found */
+        /***/ (function (module, exports, __webpack_require__) {
 
-window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
-/**
+            window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+            /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
  * CSRF token as a header based on the value of the "XSRF" token cookie.
@@ -19347,13 +19347,14 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 // removed by extract-text-webpack-plugin
 
-/***/ }),
+            /***/
+        }),
 
-/***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.sass ***!
-  \*************************************************************/
-/*! no static exports found */
+        /***/ 0:
+        /*!*************************************************************!*\
+          !*** multi ./resources/js/app.js ./resources/sass/app.sass ***!
+          \*************************************************************/
+        /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Users/jonasstasseyns/Documents/GitHub/werkstuk-webdevelopment-2/laravel/resources/js/app.js */"./resources/js/app.js");

@@ -782,7 +782,7 @@ module.exports = function dispatchRequest(config) {
         reason.response.data = transformData(
           reason.response.data,
           reason.response.headers,
-          config.transformResponse
+            config.transformResponse
         );
       }
     }
@@ -795,24 +795,22 @@ module.exports = function dispatchRequest(config) {
             /***/
         }),
 
-        /***/ ie"./node_modules/axios/lib/core/enhanceError.js"
-:
-/*!*****************************************************!*\
-  !*** ./node_modules/axios/lib/core/enhanceError.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/
-(function (module, exports, __webpack_require__) {
+        /***/ "./node_modules/axios/lib/core/enhanceError.js":
+        /*!*****************************************************!*\
+          !*** ./node_modules/axios/lib/core/enhanceError.js ***!
+          \*****************************************************/
+        /*! no static exports found */
+        /***/ (function (module, exports, __webpack_require__) {
 
-    "use strict";
+            "use strict";
 
 
-    /**
- * Update an Error with the specified config, error code, and response.
- *
- * @param {Error} error The error to update.
- * @param {Object} config The config.
- * @param {string} [code] The error code (for example, 'ECONNABORTED').
+            /**
+             * Update an Error with the specified config, error code, and response.
+             *
+             * @param {Error} error The error to update.
+             * @param {Object} config The config.
+             * @param {string} [code] The error code (for example, 'ECONNABORTED').
  * @param {Object} [request] The request.
  * @param {Object} [response] The response.
  * @returns {Error} The error.
@@ -19284,9 +19282,12 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+            __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-/***/ }),
+            __webpack_require__(/*! ./scroll */ "./resources/js/scroll.js");
+
+            /***/
+        }),
 
 /***/ "./resources/js/bootstrap.js":
 /*!***********************************!*\
@@ -19318,14 +19319,31 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     forceTLS: true
 // });
 
-/***/ }),
+            /***/
+        }),
 
-/***/ "./resources/sass/app.sass":
-/*!*********************************!*\
-  !*** ./resources/sass/app.sass ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+        /***/ "./resources/js/scroll.js":
+        /*!********************************!*\
+          !*** ./resources/js/scroll.js ***!
+          \********************************/
+        /*! no static exports found */
+        /***/ (function (module, exports) {
+
+            document.querySelector('.arrow').addEventListener('click', function (e) {
+                document.querySelector('.home-target').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+
+            /***/
+        }),
+
+        /***/ "./resources/sass/app.sass":
+        /*!*********************************!*\
+          !*** ./resources/sass/app.sass ***!
+          \*********************************/
+        /*! no static exports found */
+        /***/ (function (module, exports) {
 
 // removed by extract-text-webpack-plugin
 

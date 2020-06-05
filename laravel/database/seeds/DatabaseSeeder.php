@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
         Model::unguard();
 
         $this->call(DonationTableSeeder::class);
+        $this->call(PostTableSeeder::class);
 
         Model::reguard();
     }

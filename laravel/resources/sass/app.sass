@@ -1,22 +1,115 @@
 @import 'components/header'
 @import 'components/footer'
+@import 'pages/donate'
+@import 'pages/admin/index'
 
 *
     margin: 0
     padding: 0
     font-family: 'Roboto', sans-serif
+    line-height: 150%
 
 .wrapper
     width: 100%
     max-width: 1200px
     margin: 0 auto
 
+h1, h2, h3, h4, h5
+    font-variant: all-small-caps
+    color: #212121
+
+input, textarea
+    border: none
+    border-bottom: 1px solid #666F71
+
+input[type=submit], button
+    border: none
+    border-radius: 2px
+
+
 /*HOME*/
 .banner
     background-repeat: no-repeat
     background-size: cover
+    background-position: center
     height: 40vh
     margin-top: -5vh
 
 .home-banner
-    background-image: url("/images/home-banner.png")
+    background-image: url("/images/home-banner.jpg")
+    height: 91vh
+    display: flex
+    justify-content: center
+    align-items: flex-end
+
+.arrow
+    background-image: url("/images/download.svg")
+    width: 4vw
+    height: 4vw
+    margin-bottom: 3vh
+    background-size: contain
+
+.sub-home-banner
+    height: 70vh
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+
+.text-sub-home-banner
+    font-variant: all-small-caps
+    text-align: center
+    color: #F0F1F5
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5)
+
+.text-sub-home-banner h1, .text-sub-home-banner h3
+    color: #F0F1F5
+
+.text-sub-home-banner h1
+    font-size: 3em
+
+
+.section
+    display: flex
+    justify-content: flex-end
+    padding: 5vh 0
+
+
+.section + .section
+    justify-content: flex-start
+
+.sub-section
+    width: 100%
+    display: flex
+    justify-content: space-between
+    //padding: 2vw
+    background-color: white
+    margin: 1vw
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3)
+
+.sub-section-text-container
+    width: 40%
+    padding: 2vw
+
+.sub-section-text-container ul li
+    margin: 1vh
+    margin-left: 0
+    list-style: none
+
+.sub-section-title
+    margin-bottom: 2vh
+
+.sub-section-text
+    text-align: justify
+
+.home-img
+    height: 100%
+    width: 50%
+    background-size: contain
+    background-repeat: no-repeat
+
+.home-img.intro
+    background-position: right
+
+.sub-section-text-container.features
+    width: 70%

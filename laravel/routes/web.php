@@ -18,7 +18,18 @@ Route::get('/privacy', 'ContentController@getPrivacyPolicy')->name('privacy');
 
 Route::get('/contact', 'ContactController@getIndex')->name('contact');
 
+Route::get('/blog', 'PostsController@getIndex')->name('blog.index');
+
+Route::get('/admin', 'AdminController@getIndex')->name('admin');
+Route::get('/admin/posts', 'AdminController@getPostsIndex')->name('admin.posts');
+Route::get('/admin/edit', 'AdminController@getEdit')->name('admin.edit');
+Route::get('/admin/post-edit', 'AdminController@getPostEdit')->name('admin.post-edit');
+Route::post('/admin/edit', 'AdminController@postEdit')->name('admin.update');
+Route::post('/admin/edit', 'AdminController@updatePostEdit')->name('admin.post-edit');
+
+
 Route::get('/donate', 'MollieController@getIndex')->name('donate.index');
 Route::post('/donate', 'MollieController@preparePayment')->name('donate.prepare');
 
+Route::name('webhooks.mollie')->post('/webhooks/mollie', 'MollieController@handle');
 Route::get('/payment-success', 'MollieController@paymentSuccess')->name('payment.success');

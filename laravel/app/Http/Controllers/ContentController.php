@@ -23,7 +23,7 @@ class ContentController extends Controller
 
         // Loading data into associative array to be able to use different sections by name
         foreach ($home as $ho) {
-            $data[$ho->name] = $ho->content;
+            $data[$ho->name] = $ho->content_section;
         }
 
         return view('pages.home', compact('data'));

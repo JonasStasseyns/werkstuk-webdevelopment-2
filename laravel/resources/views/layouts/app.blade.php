@@ -12,5 +12,6 @@
 @include('partials.header')
 @yield('content')
 @include('partials.footer')
+<script src="{{asset('js/app.js')}}" defer></script>
 </body>
 </html>

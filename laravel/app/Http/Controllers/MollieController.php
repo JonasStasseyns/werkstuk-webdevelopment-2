@@ -23,13 +23,6 @@ class MollieController extends Controller
          * dat elke betaling slaagt.
          * */
 
-        $donation = new Donation;
-        $donation->first_name = $r->first_name;
-        $donation->last_name = $r->last_name;
-        $donation->email = $r->email;
-        $donation->sum = $r->sum;
-
-        $donation->save();
 
         $payment = Mollie::api()->payments->create([
             "amount" => [
@@ -38,16 +31,39 @@ class MollieController extends Controller
             ],
             "description" => "Donation by " . $r->first_name . ' ' . $r->last_name,
             "redirectUrl" => route('payment.success'),
-            "webhookUrl" => "http://skip/want/u/zegt/dat/het/niet/nodig/is",
-            "metadata" => [
-                "donation_id" => $donation->id,
-            ],
+            "webhookUrl" => "http://194c089c45f3.ngrok.io/webhooks/mollie",
         ]);
+
+        $donation = new Donation;
+        $donation->first_name = $r->first_name;
+        $donation->last_name = $r->last_name;
+        $donation->email = $r->email;
+        $donation->message = $r->message;
+        $donation->payment_id = $payment->id;
+        $donation->sum = $r->sum;
+
+        $donation->save();
 
         $payment = Mollie::api()->payments->get($payment->id);
 
         // redirect customer to Mollie checkout page
         return redirect($payment->getCheckoutUrl(), 303);
+    }
+
+    public function handle(Request $request)
+    {
+
+        if (!$request->has('id')) {
+            return;
+        }
+
+        $payment = Mollie::api()->payments()->get($request->id);
+
+        if ($payment->isPaid()) {
+            $donation = Donation::where('payment_id', '=', $request->id)->first();
+            $donation->completed = true;
+            $donation->save();
+        }
     }
 
     public function paymentSuccess()

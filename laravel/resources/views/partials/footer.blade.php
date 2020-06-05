@@ -26,7 +26,7 @@
             <p class="sub-footer-item">privacy policy</p>
             <p class="sub-footer-item">terms and agreement</p>
             <p class="sub-footer-item">licence</p>
-            <a href="{{Route('donate')}}" class="sub-footer-item">donate</a>
+            <a href="{{Route('donate.index')}}" class="sub-footer-item">donate</a>
         </div>
     </div>
 </div>

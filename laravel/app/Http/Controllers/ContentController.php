@@ -10,9 +10,16 @@ class ContentController extends Controller
 
     public function getAbout()
     {
-        $about = Content::where('name', 'about')->first();
+        $about = Content::where('page', 'about')->get();
 
-        return view('pages.about', compact('about'));
+        $data = [];
+
+        // Loading data into associative array to be able to use different sections by name
+        foreach ($about as $ab) {
+            $data[$ab->name] = $ab->content_section;
+        }
+
+        return view('pages.about', compact('data'));
     }
 
     public function getHome()

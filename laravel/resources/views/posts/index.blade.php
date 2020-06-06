@@ -7,12 +7,16 @@
             @foreach($posts as $post)
                 <div class="post-preview-item">
                     <div class="post-preview-item-tc">
-                        <h3 class="post-preview-title">{{$post->title}}</h3>
-                        <p class="post-preview-text">{{$post->body}}</p>
+                        <div class="post-preview-item-tc-at">
+                            <h3 class="post-preview-title">{{$post->title}}</h3>
+                            <p class="post-preview-text">{{$post->body}}</p>
+                        </div>
+                        <a class="post-preview-button" href="">Read more</a>
                     </div>
-                    <a class="post-preview-button" href="">Read more</a>
+                    <img src="{{$post->image}}">
                 </div>
-            @endforeach
         </div>
+        @endforeach
+    </div>
     </div>
 @endsection

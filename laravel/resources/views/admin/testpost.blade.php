@@ -9,11 +9,11 @@
         {{--        @endif--}}
         <div class="edit-form-list">
             <div class="edit-item">
-                <form action="{{route('admin.post-update')}}" method="post">
+                <form action="{{route('blog.post')}}" method="post" enctype="multipart/form-data">
                     @csrf
-                    <input type="hidden" name="id" value="{{$post->id}}">
-                    <input type="text" name="title" value="{{$post->title}}">
-                    <textarea name="body" id="" cols="30" rows="10">{{$post->body}}</textarea>
+                    <input type="text" name="title" value="">
+                    <textarea name="post_body" id="" cols="30" rows="10"></textarea>
+                    <input id="profile_image" type="file" class="form-control" name="image">
                     <input type="submit" value="Update">
                 </form>
             </div>

@@ -6,8 +6,8 @@
     <div class="banner home-banner">
         <div class="sub-home-banner">
             <div class="text-sub-home-banner">
-                <h1 class="home-title">sleep as android</h1>
-                <h3 class="home-slug">the ultimate alarm clock app</h3>
+                <h1 class="home-title">{{$data['title']}}</h1>
+                <h3 class="home-slug">{{$data['slug']}}</h3>
             </div>
             <div class="arrow"></div>
         </div>

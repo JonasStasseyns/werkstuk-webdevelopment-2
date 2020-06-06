@@ -1,9 +1,10 @@
 <nav class="nav">
     <div class="nav-wrapper">
         <div class="links">
-            <div class="logo"><img src="{{asset('images/logo.png')}}" alt="logo.png"></div>
+            <div class="logo"><a href="{{route('root')}}"><img src="{{asset('images/logo.png')}}" alt="logo.png"></a>
+            </div>
             <div class="link-container">
-                <a href="{{route('home')}}" class="link">home</a>
+                <a href="{{route('root')}}" class="link">home</a>
             </div>
             <div class="link-container">
                 <a href="{{route('blog.index')}}" class="link">news</a>
@@ -19,12 +20,21 @@
             </div>
         </div>
         <div class="links auth-links">
-            <div class="link-container">
-                <a href="" class="link">sign in</a>
-            </div>
-            <div class="link-container">
-                <a href="" class="link">sign up</a>
-            </div>
+            @if(Auth::user())
+                <div class="link-container">
+                    <a href="" class="link">{{Auth::user()->email}}</a>
+                </div>
+                <div class="link-container">
+                    <a href="{{route('register')}}" class="link">//TODO Logout</a>
+                </div>
+            @else
+                <div class="link-container">
+                    <a href="{{route('login')}}" class="link">sign in</a>
+                </div>
+                <div class="link-container">
+                    <a href="{{route('register')}}" class="link">sign up</a>
+                </div>
+            @endif
         </div>
     </div>
 </nav>

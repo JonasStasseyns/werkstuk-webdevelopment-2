@@ -2,24 +2,24 @@
     <div class="nav-wrapper">
         <div class="sub-footer">
             <p class="sub-footer-item bold">Sitemap</p>
-            <a href="{{Route('contact')}}" class="sub-footer-item">contact</a>
-            <a href="{{Route('about')}}" class="sub-footer-item">about</a>
-            <a href="{{Route('blog.index')}}" class="sub-footer-item">blog</a>
-            <a href="{{Route('donate.index')}}" class="sub-footer-item">donate</a>
+            <a href="{{route('contact')}}" class="sub-footer-item">contact</a>
+            <a href="{{route('about')}}" class="sub-footer-item">about</a>
+            <a href="{{route('blog.index')}}" class="sub-footer-item">blog</a>
+            <a href="{{route('donate.index')}}" class="sub-footer-item">donate</a>
         </div>
         <div class="sub-footer">
             <p class="sub-footer-item bold">legal</p>
-            <a href="{{Route('privacy')}}" class="sub-footer-item">privacy policy</a>
+            <a href="{{route('privacy')}}" class="sub-footer-item">privacy policy</a>
             <p class="sub-footer-item">terms and agreement</p>
-            <p class="sub-footer-item">licence</p>
+            <p class="sub-footer-item">license</p>
             <p class="sub-footer-item">complaints</p>
         </div>
         <div class="sub-footer">
             <p class="sub-footer-item bold">Corporate</p>
-            <p class="sub-footer-item">contact</p>
-            <p class="sub-footer-item">about</p>
-            <p class="sub-footer-item">blog</p>
-            <a href="{{Route('donate.index')}}" class="sub-footer-item">donate</a>
+            <p class="sub-footer-item">team</p>
+            <a href="{{route('contact')}}" class="sub-footer-item">contact</a>
+            <p class="sub-footer-item">our vision</p>
+            <a href="{{route('admin')}}" class="sub-footer-item">admin</a>
         </div>
     </div>
 </div>

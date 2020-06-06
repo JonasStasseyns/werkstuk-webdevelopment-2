@@ -106,6 +106,7 @@
       <path value="$PROJECT_DIR$/laravel/vendor/barryvdh/laravel-ide-helper" />
       <path value="$PROJECT_DIR$/laravel/vendor/mollie/laravel-mollie" />
       <path value="$PROJECT_DIR$/laravel/vendor/mollie/mollie-api-php" />
+      <path value="$PROJECT_DIR$/laravel/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

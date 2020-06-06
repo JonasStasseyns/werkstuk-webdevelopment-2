@@ -2,13 +2,13 @@
 
 @section('content')
     <div class="wrapper">
-        <h1>Buy us a coffee !</h1>
-        @if(count($errors))
-            <div class="toast toast-error">First name, last name, email and amount are required.</div>
-        @endif
         <div class="donation-form">
             <form action="{{Route('donate.prepare')}}" method="post" class="donate-form-form">
                 @csrf
+                <h1>Buy us a coffee !</h1>
+                @if(count($errors))
+                    <div class="toast toast-error">First name, last name, email and amount are required.</div>
+                @endif
                 <label>First name
                     <input type="text" name="first_name" placeholder="first name">
                 </label>

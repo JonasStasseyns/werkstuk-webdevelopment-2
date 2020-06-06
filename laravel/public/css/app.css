@@ -101,6 +101,7 @@
 .donation-form form {
     display: flex;
     flex-direction: column;
+    padding-left: 2vw;
 }
 
 .donation-form form input,
@@ -442,10 +443,19 @@ button {
 }
 
 .home-img.intro {
-  background-position: right;
+    background-position: right;
 }
 
 .sub-section-text-container.features {
-  width: 70%;
+    width: 70%;
+}
+
+.privacy-wrapper p {
+    margin: 1vh 0;
+    text-align: justify;
+}
+
+.privacy-wrapper h3 {
+    margin-top: 5vh;
 }
 

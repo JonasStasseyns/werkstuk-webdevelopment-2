@@ -38,8 +38,15 @@ class ContentController extends Controller
 
     public function getPrivacyPolicy()
     {
-        $privacy = Content::where('name', 'privacy')->first();
+        $privacies = Content::where('page', 'privacy')->get();
 
-        return view('pages.privacy', compact('privacy'));
+        $data = [];
+
+        // Loading data into associative array to be able to use different sections by name
+        foreach ($privacies as $privacy) {
+            $data[$privacy->name] = $privacy->content_section;
+        }
+
+        return view('pages.privacy', compact('data'));
     }
 }

@@ -60,26 +60,59 @@
 }
 
 .donation-form form {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .donation-form form input,
 .donation-form form textarea {
-  margin: 1vh 0;
-  border-radius: 0;
-  border: 0;
-  border-bottom: 1px solid #636b6f;
+    margin: 1vh 0;
+    border-radius: 0;
+}
+
+.donate-form-form {
+    width: 50%;
+}
+
+.donate-form-form label input,
+.donate-form-form label textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 3vh;
+    padding: 2vh;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.donate-form-form label input:focus,
+.donate-form-form label textarea:focus {
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.donate-form-form input[type=submit] {
+    color: #FAFAFA;
+    text-decoration: none;
+    background-color: #ffca36;
+    padding: 0.5vw;
+    width: 100%;
+    margin-top: 2vh;
+    text-align: center;
+    font-variant: all-small-caps;
+}
+
+.toast-error {
+    background-color: #ff5252 !important;
+    margin-bottom: 5vh;
 }
 
 .edit-form-list {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .edit-item {
-  margin: 1vh 0;
-  display: flex;
+    margin: 1vh 0;
+    display: flex;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   justify-content: space-between;
   width: 50%;
@@ -113,10 +146,11 @@
 }
 
 .toast {
-  background-color: #81c784;
-  width: 50%;
-  padding: 1vw;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    background-color: #81c784;
+    width: 50%;
+    padding: 1vw;
+    margin: 1vh 0;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .admin-overview {
@@ -166,8 +200,8 @@
 }
 
 .blog-index-container {
-  display: flex;
-  width: 100%;
+    display: flex;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -218,6 +252,10 @@
     max-height: 30vh;
 }
 
+.post-preview-item.admin-or {
+    flex-direction: column;
+}
+
 .about-section {
     margin-top: 3vh;
     text-align: justify;
@@ -233,8 +271,8 @@
 
 .wrapper {
     width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1,
@@ -242,20 +280,25 @@ h2,
 h3,
 h4,
 h5 {
-  font-variant: all-small-caps;
-  color: #212121;
+    font-variant: all-small-caps;
+    color: #212121;
 }
 
 input,
 textarea {
-  border: none;
-  border-bottom: 1px solid #666F71;
+    border: none;
+    border-bottom: 1px solid #BABABA;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
 }
 
 input[type=submit],
 button {
-  border: none;
-  border-radius: 2px;
+    border: none;
+    border-radius: 2px;
 }
 
 /*HOME*/

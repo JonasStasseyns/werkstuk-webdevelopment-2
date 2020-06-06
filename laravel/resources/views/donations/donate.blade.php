@@ -2,15 +2,29 @@
 
 @section('content')
     <div class="wrapper">
+        <h1>Buy us a coffee !</h1>
+        @if(count($errors))
+            <div class="toast toast-error">First name, last name, email and amount are required.</div>
+        @endif
         <div class="donation-form">
-            <form action="{{Route('donate.prepare')}}" method="post">
+            <form action="{{Route('donate.prepare')}}" method="post" class="donate-form-form">
                 @csrf
-                <input type="text" name="first_name" placeholder="first" value="Jonas">
-                <input type="text" name="last_name" placeholder="last" value="Stasseyns">
-                <input type="email" name="email" placeholder="email" value="stasseynsjonas@gmail.com">
-                <input type="text" name="sum" placeholder="sum" value="124">
-                <textarea name="message" placeholder="message..."></textarea>
-                <input type="submit" value="donate">
+                <label>First name
+                    <input type="text" name="first_name" placeholder="first name">
+                </label>
+                <label>Last name
+                    <input type="text" name="last_name" placeholder="last name">
+                </label>
+                <label>Email address
+                    <input type="email" name="email" placeholder="yourname@domain.com">
+                </label>
+                <label>How expensive a coffee would you like to buy us?
+                    <input type="text" name="sum" placeholder="€5 for example">
+                </label>
+                <label>Want to add a note?
+                    <textarea name="message" placeholder="Your message..."></textarea>
+                </label>
+                <input type="submit" value="continue to payment">
             </form>
         </div>
     </div>

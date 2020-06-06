@@ -9,6 +9,6 @@ $factory->define(Post::class, function (Faker $faker) {
     return [
         'title' => $faker->sentence(),
         'body' => $faker->text(200),
-        'image' => $faker->word . '.png',
+        'image' => $faker->imageUrl($width = 800, $height = 600),
     ];
 });

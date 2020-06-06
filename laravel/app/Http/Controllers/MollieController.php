@@ -23,6 +23,12 @@ class MollieController extends Controller
          * dat elke betaling slaagt.
          * */
 
+        $this->validate($r, [
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'email' => 'required',
+            'sum' => 'required | numeric',
+        ]);
 
         $payment = Mollie::api()->payments->create([
             "amount" => [

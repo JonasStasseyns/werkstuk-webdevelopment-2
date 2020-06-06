@@ -15,8 +15,7 @@
                     </div>
                     <img src="{{$post->image}}">
                 </div>
+            @endforeach
         </div>
-        @endforeach
-    </div>
     </div>
 @endsection

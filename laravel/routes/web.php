@@ -39,3 +39,4 @@ Route::name('webhooks.mollie')->post('/webhooks/mollie', 'MollieController@handl
 Route::get('/payment-success', 'MollieController@paymentSuccess')->name('payment.success');
 
 Auth::routes();
+Route::get('/logout', 'Auth\LoginController@logout');

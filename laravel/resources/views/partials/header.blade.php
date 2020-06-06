@@ -25,7 +25,7 @@
                     <a href="" class="link">{{Auth::user()->email}}</a>
                 </div>
                 <div class="link-container">
-                    <a href="{{Auth::logout()}}" class="link">Logout</a>
+                    <a href="{{route('logout')}}" class="link">Logout</a>
                 </div>
             @else
                 <div class="link-container">

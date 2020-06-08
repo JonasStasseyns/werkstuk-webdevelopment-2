@@ -91,8 +91,25 @@
           !*** ./resources/js/app.js ***!
           \*****************************/
         /*! no static exports found */
+        /***/ (function (module, exports, __webpack_require__) {
+
+            __webpack_require__(/*! ./scroll */ "./resources/js/scroll.js");
+
+            /***/
+        }),
+
+        /***/ "./resources/js/scroll.js":
+        /*!********************************!*\
+          !*** ./resources/js/scroll.js ***!
+          \********************************/
+        /*! no static exports found */
         /***/ (function (module, exports) {
 
+            document.querySelector('.arrow').addEventListener('click', function (e) {
+                document.querySelector('.home-target').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
 
             /***/
         }),

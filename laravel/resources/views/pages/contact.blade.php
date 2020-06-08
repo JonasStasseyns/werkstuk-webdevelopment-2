@@ -3,7 +3,7 @@
 @section('content')
     <div class="wrapper">
         <div class="donation-form">
-            <form action="{{Route('contact')}}" method="post" class="donate-form-form">
+            <form action="{{Route('contact.send')}}" method="post" class="donate-form-form">
                 @csrf
                 <h1>Get in touch</h1>
                 @if(count($errors))

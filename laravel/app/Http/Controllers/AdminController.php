@@ -58,6 +58,6 @@ class AdminController extends Controller
         $post->title = $r->title;
         $post->body = $r->body;
         $post->save();
-//        return redirect()->route('admin.edit', ['page' => $r->page, 'name' => $r->name]);
+        return redirect()->route('admin.posts', ['title' => $r->title]);
     }
 }

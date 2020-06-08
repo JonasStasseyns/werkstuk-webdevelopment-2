@@ -11,11 +11,13 @@
                             <h3 class="post-preview-title">{{$post->title}}</h3>
                             <p class="post-preview-text">{{$post->body}}</p>
                         </div>
-                        <a class="post-preview-button" href="">Read more</a>
+                        <a class="post-preview-button" href="{{route('blog.detail', ['id' => $post->id])}}">Read
+                            more</a>
                     </div>
                     <img src="{{$post->image}}">
                 </div>
             @endforeach
         </div>
+        <div class="pagination-container">{{ $posts->links() }}</div>
     </div>
 @endsection

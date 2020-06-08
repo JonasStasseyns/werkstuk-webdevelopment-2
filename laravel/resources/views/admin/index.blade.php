@@ -3,7 +3,12 @@
 @section('content')
     <div class="wrapper">
 
-        <h1>Contentbeheer</h1>
+        <div class="admin-index-top-row">
+            <h1>Contentbeheer</h1>
+            <a href="{{route('blog.create')}}">
+                <button class="more-posts">Create post</button>
+            </a>
+        </div>
 
         <div class="admin-overview">
             <div class="admin-page-list">
@@ -21,7 +26,12 @@
                 @foreach($posts as $post)
                     <div class="admin-page">
                         <p class="admin-page-name">{{$post->title}}</p>
-                        <a class="admin-page-button" href="{{route('admin.post-edit', ['id' => $post->id])}}">Edit</a>
+                        <div class="admin-index-posts-btn-group">
+                            <a class="admin-page-button"
+                               href="{{route('admin.post-edit', ['id' => $post->id])}}">Edit</a>
+                            <a class="admin-page-button delete"
+                               href="{{route('blog.delete', ['id' => $post->id, 'from' => 'index'])}}">Delete</a>
+                        </div>
                     </div>
                 @endforeach
                 <a href="{{route('admin.posts')}}">

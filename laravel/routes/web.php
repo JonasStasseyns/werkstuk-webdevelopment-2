@@ -17,12 +17,13 @@ Route::get('/about', 'ContentController@getAbout')->name('about');
 Route::get('/privacy', 'ContentController@getPrivacyPolicy')->name('privacy');
 
 Route::get('/contact', 'ContactController@getIndex')->name('contact');
+Route::post('/contact', 'ContactController@sendMail')->name('contact.send');
 
 Route::get('/blog', 'PostsController@getIndex')->name('blog.index');
-Route::get('/testpost', function () {
-    return view('admin.testpost');
-});
+Route::get('/blog/new', 'PostsController@getCreate')->name('blog.create');
 Route::post('/blog/post', 'PostsController@postCreate')->name('blog.post');
+Route::get('/blog/{id}', 'PostsController@getDetail')->name('blog.detail');
+Route::get('/blog/delete/{id}/{from}', 'PostsController@getDelete')->name('blog.delete');
 
 Route::get('/admin', 'AdminController@getIndex')->name('admin')->middleware('auth');
 Route::get('/admin/posts', 'AdminController@getPostsIndex')->name('admin.posts')->middleware('auth');
@@ -40,3 +41,7 @@ Route::get('/payment-success', 'MollieController@paymentSuccess')->name('payment
 
 Auth::routes();
 Route::get('/logout', 'Auth\LoginController@logout');
+
+Route::get('/testroute', function () {
+    return view('test');
+});

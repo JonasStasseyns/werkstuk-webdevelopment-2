@@ -26,7 +26,7 @@ class ContactController extends Controller
 
         Mail::send('mails.contact', $form, function ($message) use ($r) {
             $message->sender('jonastas@student.arteveldehs.be');
-            $message->to('jonastas@student.arteveldehs.be', 'Jonas Stasseyns');
+            $message->to('brundeco@student.arteveldehs.be', 'Jonas Stasseyns');
 //            $message->cc($r->email, $r->name);
             $message->subject($r->subject);
         });

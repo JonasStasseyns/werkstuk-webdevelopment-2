@@ -1,17 +1,13 @@
-
 <!doctype html>
-<html lang="en" style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;">
-<head style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;">
-    <meta charset="UTF-8" style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-          style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"
-          style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;">
-    <title style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;">Document</title>
-    <link rel="stylesheet" href="http://laravel.test/css/app.css"
-          style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;">
-    <style style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;">
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://laravel.test/css/app.css">
+    <style>
         .nav {
             width: 100%;
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -535,92 +531,58 @@
         }
     </style>
 </head>
-<body style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;">
+<body>
 
-<div class="banner home-banner"
-     style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;background-repeat: no-repeat;background-size: cover;background-position: center;height: 50vh;margin-top: -5vh;background-image: url(http://stasseynsjonas.be/images/home-banner.jpg);display: flex;justify-content: center;align-items: flex-end;">
-    <div class="sub-home-banner"
-         style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;height: 30vh;display: flex;flex-direction: column;justify-content: space-between;align-items: center;">
-        <div class="text-sub-home-banner"
-             style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;font-variant: all-small-caps;text-align: center;color: #F0F1F5;text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">
-            <h1 class="home-title"
-                style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;font-variant: all-small-caps;color: #F0F1F5;font-size: 3em;">
-                Sleep as android</h1>
-            <h3 class="home-slug"
-                style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;font-variant: all-small-caps;color: #F0F1F5;">
-                The ultimate alarm clock app</h3>
+<div class="banner home-banner">
+    <div class="sub-home-banner">
+        <div class="text-sub-home-banner">
+            <h1 class="home-title">Sleep as android</h1>
+            <h3 class="home-slug">The ultimate alarm clock app</h3>
         </div>
-        <div class="arrow"
-             style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;background-image: url(/images/download.svg);width: 4vw;height: 4vw;margin-bottom: 3vh;background-size: contain;"></div>
+        <div class="arrow"></div>
     </div>
 </div>
-<div class="wrapper"
-     style="margin: 0 auto;padding: 6vw;box-sizing: border-box;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;width: 100%;max-width: 1200px;">
-    <h1 style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;font-variant: all-small-caps;color: #212121;">
-        Message from: {{$first_name}} {{$last_name}}</h1>
-    <div class="blog-index-container"
-         style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;display: flex;width: 100%;flex-wrap: wrap;justify-content: space-between;">
-        <div class="post-detail-container"
-             style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;padding-right: 2vw;box-sizing: border-box;width: 60%;">
-            <p style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;text-align: justify">{{$message_text}}</p>
+<div class="wrapper">
+    <h1>Test title comes here</h1>
+    <div class="blog-index-container">
+        <div class="post-detail-container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae delectus error ratione? Accusantium
+                beatae enim exercitationem fugiat labore numquam perferendis rem rerum ut, vel! Accusantium architecto
+                illo labore minima quam!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis delectus enim ipsam itaque laudantium
+                neque officia, qui reiciendis repellat saepe temporibus ut velit voluptate. Aut doloremque maiores
+                obcaecati officia velit!</p>
+        </div>
+        <div class="post-detail-image-container">
+            <img src="https://lorempixel.com/600/400" alt="">
         </div>
     </div>
 </div>
-<div class="footer"
-     style="margin: 0;padding: 1vw;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;display: flex;justify-content: space-around;box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3);margin-top: 5vh;">
-    <div class="nav-wrapper"
-         style="margin: 0 auto;padding: 0 1vw;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;display: flex;justify-content: space-between;width: 100%;max-width: 1200px;box-sizing: border-box;">
-        <div class="sub-footer"
-             style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;display: flex;flex-direction: column;">
-            <p class="sub-footer-item bold"
-               style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;text-decoration: none;color: #212121;font-weight: bold;font-variant: all-small-caps;">
-                Sitemap</p>
-            <a href="http://laravel.test/contact" class="sub-footer-item"
-               style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;text-decoration: none;color: #212121;">contact</a>
-            <a href="http://laravel.test/about" class="sub-footer-item"
-               style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;text-decoration: none;color: #212121;">about</a>
-            <a href="http://laravel.test/blog" class="sub-footer-item"
-               style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;text-decoration: none;color: #212121;">blog</a>
-            <a href="http://laravel.test/donate" class="sub-footer-item"
-               style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;text-decoration: none;color: #212121;">donate</a>
+<div class="footer">
+    <div class="nav-wrapper">
+        <div class="sub-footer">
+            <p class="sub-footer-item bold">Sitemap</p>
+            <a href="http://laravel.test/contact" class="sub-footer-item">contact</a>
+            <a href="http://laravel.test/about" class="sub-footer-item">about</a>
+            <a href="http://laravel.test/blog" class="sub-footer-item">blog</a>
+            <a href="http://laravel.test/donate" class="sub-footer-item">donate</a>
         </div>
-        <div class="sub-footer"
-             style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;display: flex;flex-direction: column;">
-            <p class="sub-footer-item bold"
-               style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;text-decoration: none;color: #212121;font-weight: bold;font-variant: all-small-caps;">
-                legal</p>
-            <a href="http://laravel.test/privacy" class="sub-footer-item"
-               style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;text-decoration: none;color: #212121;">privacy
-                policy</a>
-            <p class="sub-footer-item"
-               style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;text-decoration: none;color: #212121;">
-                terms and agreement</p>
-            <p class="sub-footer-item"
-               style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;text-decoration: none;color: #212121;">
-                license</p>
-            <p class="sub-footer-item"
-               style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;text-decoration: none;color: #212121;">
-                complaints</p>
+        <div class="sub-footer">
+            <p class="sub-footer-item bold">legal</p>
+            <a href="http://laravel.test/privacy" class="sub-footer-item">privacy policy</a>
+            <p class="sub-footer-item">terms and agreement</p>
+            <p class="sub-footer-item">license</p>
+            <p class="sub-footer-item">complaints</p>
         </div>
-        <div class="sub-footer"
-             style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;display: flex;flex-direction: column;">
-            <p class="sub-footer-item bold"
-               style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;text-decoration: none;color: #212121;font-weight: bold;font-variant: all-small-caps;">
-                Corporate</p>
-            <p class="sub-footer-item"
-               style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;text-decoration: none;color: #212121;">
-                team</p>
-            <a href="http://laravel.test/contact" class="sub-footer-item"
-               style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;text-decoration: none;color: #212121;">contact</a>
-            <p class="sub-footer-item"
-               style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;text-decoration: none;color: #212121;">
-                our vision</p>
-            <a href="http://laravel.test/admin" class="sub-footer-item"
-               style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;text-decoration: none;color: #212121;">admin</a>
+        <div class="sub-footer">
+            <p class="sub-footer-item bold">Corporate</p>
+            <p class="sub-footer-item">team</p>
+            <a href="http://laravel.test/contact" class="sub-footer-item">contact</a>
+            <p class="sub-footer-item">our vision</p>
+            <a href="http://laravel.test/admin" class="sub-footer-item">admin</a>
         </div>
     </div>
 </div>
-<script src="http://laravel.test/js/app.js" defer
-        style="margin: 0;padding: 0;font-family: &quot;Roboto&quot;, sans-serif;line-height: 150%;"></script>
+<script src="http://laravel.test/js/app.js" defer></script>
 </body>
 </html>

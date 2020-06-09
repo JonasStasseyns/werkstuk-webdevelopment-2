@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{URL::asset('css/app.css')}}">
 </head>
 <body>
-@include('partials.header')
+{{--@include('partials.header')--}}
 @yield('content')
 @include('partials.footer')
 <script src="{{asset('js/app.js')}}" defer></script>

@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Content;
+use Illuminate\Http\Request;
 
 class ContentController extends Controller
 {
     //
 
-    public function getAbout()
+    public function getAbout(Request $r)
     {
         $about = Content::where('page', 'about')->get();
 
@@ -16,13 +17,17 @@ class ContentController extends Controller
 
         // Loading data into associative array to be able to use different sections by name
         foreach ($about as $ab) {
-            $data[$ab->name] = $ab->content_section;
+            if ($r->session()->get('lingo') == 'nl') {
+                $data[$ab->name] = $ab->content_section_nl;
+            } else {
+                $data[$ab->name] = $ab->content_section;
+            }
         }
 
         return view('pages.about', compact('data'));
     }
 
-    public function getHome()
+    public function getHome(Request $r)
     {
         $home = Content::where('page', 'home')->get();
 
@@ -30,7 +35,11 @@ class ContentController extends Controller
 
         // Loading data into associative array to be able to use different sections by name
         foreach ($home as $ho) {
-            $data[$ho->name] = $ho->content_section;
+            if ($r->session()->get('lingo') == 'nl') {
+                $data[$ho->name] = $ho->content_section_nl;
+            } else {
+                $data[$ho->name] = $ho->content_section;
+            }
         }
 
         return view('pages.home', compact('data'));

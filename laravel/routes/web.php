@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::post('/setlingo', 'HomeController@postLingo')->name('lingo');
+
 Route::get('/', 'ContentController@getHome')->name('root');
 Route::get('/about', 'ContentController@getAbout')->name('about');
 Route::get('/privacy', 'ContentController@getPrivacyPolicy')->name('privacy');

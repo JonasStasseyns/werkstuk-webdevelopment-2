@@ -16,6 +16,7 @@ $factory->define(Donation::class, function (Faker $faker) {
         'email' => $faker->email,
         'sum' => $faker->numberBetween(1, 200),
         'message' => $faker->text(100),
+        'public' => 0,
         'completed' => 0
     ];
 });

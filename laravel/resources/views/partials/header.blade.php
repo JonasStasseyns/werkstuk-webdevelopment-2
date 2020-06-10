@@ -16,7 +16,7 @@
                 <a href="{{route('contact')}}" class="link">contact</a>
             </div>
             <div class="link-container">
-                <a href="{{route('donate.index')}}" class="link">donate</a>
+                <a href="{{route('donate.index')}}" class="link">donations</a>
             </div>
         </div>
         <div class="links auth-links">
@@ -35,6 +35,19 @@
                     <a href="{{route('register')}}" class="link">sign up</a>
                 </div>
             @endif
+            <div class="lang-container">
+                <form action="{{route('lingo')}}" method="post" class="lang-form">
+                    @csrf
+                    <input type="hidden" name="lingo" value="nl">
+                    <input type="submit" value="nl" class="lang-form-btn">
+                </form>
+
+                <form action="{{route('lingo')}}" method="post" class="lang-form">
+                    @csrf
+                    <input type="hidden" name="lingo" value="en">
+                    <input type="submit" value="en" class="lang-form-btn">
+                </form>
+            </div>
         </div>
     </div>
 </nav>

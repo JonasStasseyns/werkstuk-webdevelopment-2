@@ -37,12 +37,26 @@
     padding-top: 0.1vw;
 }
 
+.lang-container {
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+}
+
+.lang-form-btn {
+    padding: 1.2vw 1vw 1vw 1vw;
+    background-color: transparent;
+    color: #212121;
+    font-variant: all-small-caps;
+    font-size: 1em;
+}
+
 .footer {
-  display: flex;
-  justify-content: space-around;
-  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3);
-  padding: 1vw;
-  margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3);
+    padding: 1vw;
+    margin-top: 5vh;
 }
 
 .sub-footer {
@@ -143,6 +157,25 @@
 .toast-error {
     background-color: #ff5252 !important;
     margin-bottom: 5vh;
+}
+
+.donation-amount-index {
+    background-color: #99B447;
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+    color: #FAFAFA;
+    width: 8%;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+.donation-list-item {
+    padding: 0 !important;
+}
+
+.donation-list-sub-item {
+    padding: 1vw;
 }
 
 .edit-form-list {

@@ -10,7 +10,8 @@ class MollieController extends Controller
 {
     public function getIndex()
     {
-        return view('donations.donate');
+        $donations = Donation::all();
+        return view('donations.donate', compact('donations'));
     }
 
     public function preparePayment(Request $r)
@@ -33,11 +34,11 @@ class MollieController extends Controller
         $payment = Mollie::api()->payments->create([
             "amount" => [
                 "currency" => "EUR",
-                "value" => strval(number_format($r->sum, 2)), // You must send the correct number of decimals, thus we enforce the use of strings
+                "value" => bcdiv($r->sum, 1, 2), // You must send the correct number of decimals, thus we enforce the use of strings
             ],
             "description" => "Donation by " . $r->first_name . ' ' . $r->last_name,
             "redirectUrl" => route('payment.success'),
-            "webhookUrl" => "http://194c089c45f3.ngrok.io/webhooks/mollie",
+            "webhookUrl" => "http://fa543ca08357.ngrok.io/webhooks/mollie",
         ]);
 
         $donation = new Donation;

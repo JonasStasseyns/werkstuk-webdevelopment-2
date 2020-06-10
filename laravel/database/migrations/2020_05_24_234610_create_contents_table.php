@@ -18,6 +18,7 @@ class CreateContentsTable extends Migration
             $table->string('name');
             $table->string('page');
             $table->text('content_section');
+            $table->text('content_section_nl');
             $table->timestamps();
         });
     }

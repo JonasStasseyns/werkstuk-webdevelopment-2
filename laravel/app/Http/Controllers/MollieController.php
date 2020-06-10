@@ -14,6 +14,11 @@ class MollieController extends Controller
         return view('donations.donate', compact('donations'));
     }
 
+    public function getDonate()
+    {
+        return view('donations.donate-form');
+    }
+
     public function preparePayment(Request $r)
     {
         /*
@@ -46,6 +51,7 @@ class MollieController extends Controller
         $donation->last_name = $r->last_name;
         $donation->email = $r->email;
         $donation->message = $r->message;
+        $donation->public = $r->public;
         $donation->payment_id = $payment->id;
         $donation->sum = $r->sum;
 

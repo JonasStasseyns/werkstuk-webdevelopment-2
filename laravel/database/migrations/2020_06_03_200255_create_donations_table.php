@@ -21,7 +21,7 @@ class CreateDonationsTable extends Migration
             $table->string('email');
             $table->float('sum');
             $table->string('message');
-            $table->boolean('public');
+            $table->string('public');
             $table->boolean('completed')->default(false);
             $table->timestamps();
         });

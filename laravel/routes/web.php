@@ -36,6 +36,7 @@ Route::post('/admin/post-edit', 'AdminController@updatePostEdit')->name('admin.p
 
 
 Route::get('/donate', 'MollieController@getIndex')->name('donate.index');
+Route::get('/donate/form', 'MollieController@getDonate')->name('donate.form');
 Route::post('/donate', 'MollieController@preparePayment')->name('donate.prepare');
 
 Route::name('webhooks.mollie')->post('/webhooks/mollie', 'MollieController@handle');

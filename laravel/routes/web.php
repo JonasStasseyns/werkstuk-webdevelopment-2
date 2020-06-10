@@ -34,6 +34,7 @@ Route::get('/admin/edit', 'AdminController@getEdit')->name('admin.edit')->middle
 Route::get('/admin/post-edit', 'AdminController@getPostEdit')->name('admin.post-edit')->middleware('auth');
 Route::post('/admin/edit', 'AdminController@updateEdit')->name('admin.update')->middleware('auth');
 Route::post('/admin/post-edit', 'AdminController@updatePostEdit')->name('admin.post-update')->middleware('auth');
+Route::get('/admin/donations', 'AdminController@getDonations')->name('admin.donations')->middleware('auth');
 
 
 Route::get('/donate', 'MollieController@getIndex')->name('donate.index');

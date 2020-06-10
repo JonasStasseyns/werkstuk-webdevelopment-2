@@ -11,10 +11,11 @@
             <div class="edit-item">
                 <form action="{{route('blog.post')}}" method="post" enctype="multipart/form-data">
                     @csrf
-                    <input type="text" name="title" value="">
-                    <textarea name="post_body" id="" cols="30" rows="10"></textarea>
+                    <input type="text" name="title" value="" placeholder="title">
+                    <textarea name="post_intro" id="" cols="30" rows="10" placeholder="intro"></textarea>
+                    <textarea name="post_body" id="" cols="30" rows="10" placeholder="body"></textarea>
                     <input id="profile_image" type="file" class="form-control" name="image">
-                    <input type="submit" value="Update">
+                    <input type="submit" value="Create">
                 </form>
             </div>
         </div>

@@ -22,5 +22,6 @@
                 </div>
             @endforeach
         </div>
+        <div class="pagination-container">{{ $posts->links() }}</div>
     </div>
 @endsection

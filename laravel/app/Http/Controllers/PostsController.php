@@ -25,9 +25,11 @@ class PostsController extends Controller
         $post->title = $r->title;
         $post->image = request()->image->store('uploads', 'public');
         $post->image = '/storage/' . $post->image;
-        $post->intro = $r->intro;
+        $post->intro = $r->post_intro;
         $post->body = $r->post_body;
         $post->save();
+
+        return redirect()->route('admin.index');
     }
 
     public function getDetail($id)

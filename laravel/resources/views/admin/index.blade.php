@@ -5,9 +5,14 @@
 
         <div class="admin-index-top-row">
             <h1>Contentbeheer</h1>
-            <a href="{{route('blog.create')}}">
-                <button class="more-posts">Create post</button>
-            </a>
+            <div class="top-top-right">
+                <a href="{{route('blog.create')}}">
+                    <button class="more-posts">Create post</button>
+                </a>
+                <a href="{{route('admin.donations')}}">
+                    <button class="more-posts">Donation list</button>
+                </a>
+            </div>
         </div>
 
         <div class="admin-overview">

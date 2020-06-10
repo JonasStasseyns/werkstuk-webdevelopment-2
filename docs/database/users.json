@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Jonas stasseyns",
+    "email": "stasseynsjonas@gmail.com",
+    "email_verified_at": null,
+    "password": "$2y$10$s2IFJ7reEDtsrUG.6jU85OtuplOiZIpa8XGxgV3KUYWyUi5ZbCmeq",
+    "remember_token": null,
+    "created_at": "2020-06-10 16:18:03",
+    "updated_at": "2020-06-10 16:18:03"
+  }
+]

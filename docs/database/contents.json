@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "name": "title",
+    "page": "home",
+    "content_section": "Sleep as android",
+    "content_section_nl": "sleep as android",
+    "created_at": null,
+    "updated_at": "2020-06-10 17:13:01"
+  },
+  {
+    "id": 2,
+    "name": "slug",
+    "page": "home",
+    "content_section": "the ultimate alarm clock app",
+    "content_section_nl": "de ultieme wekker app",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 3,
+    "name": "intro-title",
+    "page": "home",
+    "content_section": "alarm clock and sleep tracker",
+    "content_section_nl": "wekker én slaap tracker",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 4,
+    "name": "intro",
+    "page": "home",
+    "content_section": "Alarm clock and sleep cycle tracker that wakes you gently in the optimal moment for pleasant mornings.  Common alarm clocks ignore your sleep cycles, they wake you on schedule no matter your are currently in your deep sleep. Waking up from deep sleep is unpleasant, it makes you tired and it may negatively affect your productivity during the whole day.  Sleep as Android is different. It tracks your sleep to find the optimal moment for your wake up. Waking up in light sleep is natural, gentle and it may only be compared to the experience of waking up without any alarm clock.",
+    "content_section_nl": "Wekker en slaapcyclus-tracker die je zachtjes wakker maakt op het optimale moment voor aangename ochtenden.  Veel voorkomende wekkers negeren uw slaapcycli, ze maken u op tijd wakker, ongeacht of u zich momenteel in uw diepe slaap bevindt. Wakker worden uit diepe slaap is onaangenaam, het maakt je moe en het kan je productiviteit gedurende de hele dag negatief beïnvloeden.  Slaap als Android is anders. Het volgt je slaap om het optimale moment te vinden voor je wakker worden. Wakker worden in een lichte slaap is natuurlijk, zachtaardig en kan alleen worden vergeleken met de ervaring van wakker worden zonder wekker.",
+    "created_at": null,
+    "updated_at": "2020-06-10 17:23:01"
+  },
+  {
+    "id": 5,
+    "name": "features-title",
+    "page": "home",
+    "content_section": "main features",
+    "content_section_nl": "hoofdfuncties",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 6,
+    "name": "features",
+    "page": "home",
+    "content_section": "<ul><li><b>Sleep cycle tracking</b> and <b>s</b><b>mart wake up</b> in optimal sleep phase</li><li>Sleep <b>deficit stats</b> and <b>bedtime</b>&nbsp;notification</li><li>Nature sound <b>lullabies</b> for fast fall asleep (+binaural beats)</li><li>CAPTCHA: <b>gets you out of bed</b> on time (QR code, NFC tag, shake your phone, morning math)</li><li><b>Gentle</b> alarm, wake up with light and nature sounds <b>playlists</b> and <b>online radio alarm</b></li><li>Sleep talk and <b>snoring recording</b>, snoring stats and <b>anti-snoring</b>, room <b>noise stats</b></li><li><b>Smart watch (Pebble, Wear, Gear) </b>sleep tracking</li><li>Awake detection through heart rate sensing, using BT Smart devices or Android Wear</li><li>Smart light (Philips HUE) wake up</li><li>Integration with major health services: Google Fit, S Health, Zenobase, Fluxtream, Beeminder</li><li>Sleep <b>advice</b>, rating and <b>tagging</b> and many more…</li></ul>",
+    "content_section_nl": "Wekker en slaapcyclus-tracker die je zachtjes wakker maakt op het optimale moment voor aangename ochtenden.  Veel voorkomende wekkers negeren uw slaapcycli, ze maken u op tijd wakker, ongeacht of u zich momenteel in uw diepe slaap bevindt. Wakker worden uit diepe slaap is onaangenaam, het maakt je moe en het kan je productiviteit gedurende de hele dag negatief beïnvloeden.  <ul><li> <b> Slaapcyclus volgen </b> en <b>s</b> <b> mart wordt wakker </b> in de optimale slaapfase </li> <li> Slaap <b> tekortstatistieken </b> en <b> bedtijd</b>&nbsp;notificatie</li> <li> Natuurgeluiden <b> slaapliedjes </b> voor snel in slaap vallen (+ binaurale beats) </li> <li > CAPTCHA: <b> haalt u op tijd uit bed </b> (QR-code, NFC-tag, schud uw telefoon, wiskunde in de ochtend) </li> <li> <b> Zacht </b> alarm, word wakker met licht en natuurgeluiden <b> afspeellijsten </b> en <b> online radioalarm </b> </li> <li> Slaapgesprek en <b> snurken opnemen </b>, snurken statistieken en <b> anti-snurk </b>, kamer <b> geluidsstatistieken </b> </li> <li> <b> Smartwatch (Pebble, Wear, Gear) </b> slaap volgen </li> <li> Ontwaak detectie door hartslagmeting, met behulp van BT Smart-apparaten of Android Wear </li> <li> Smart light (Philips HUE) wordt wakker </li> <li> Integratie met belangrijke gezondheidsdiensten: Google Fit, S Health, Zenobase, Fluxtream, Beeminder </li> <li> Slaap <b> advies </b>, beoordeling en <b> tagging </b> en nog veel meer ... </li> </ul>",
+    "created_at": null,
+    "updated_at": "2020-06-10 17:15:00"
+  },
+  {
+    "id": 7,
+    "name": "title",
+    "page": "about",
+    "content_section": "How do we improve sleep?",
+    "content_section_nl": "Hoe verbeteren wij slaap?",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 8,
+    "name": "intro",
+    "page": "about",
+    "content_section": "Automatic start after fall asleep is a breakthrough method invented by Urbandroid which uses Google’s Activity Transition API as a base to detect when you’ve gone to bed to start sleep tracking.  First, we need to find intervals when it is most probable that you’d be sleeping. By default, the interval we use is 8PM to 7AM, but this will shift over time to reflect your habits.  Because the algorithm learns from your typical patterns it is a good idea to help it from time to time and if you have the chance press the moon button just to give it an extra hint to improve accuracy.",
+    "content_section_nl": "Automatisch starten na in slaap vallen is een baanbrekende methode die is uitgevonden door Urbandroid, die de Activity Transition API van Google gebruikt als basis om te detecteren wanneer je naar bed gaat om te beginnen met het volgen van je slaap.  Ten eerste moeten we intervallen zoeken wanneer het waarschijnlijk is dat u slaapt. Standaard is het interval dat we gebruiken 20.00 uur tot 07.00 uur, maar dit zal in de loop van de tijd veranderen om uw gewoonten weer te geven.  Omdat het algoritme leert van uw typische patronen, is het een goed idee om het van tijd tot tijd te helpen en als u de kans krijgt om op de maanknop te drukken om het een extra hint te geven om de nauwkeurigheid te verbeteren.",
+    "created_at": null,
+    "updated_at": "2020-06-10 17:22:26"
+  },
+  {
+    "id": 9,
+    "name": "section_one",
+    "page": "about",
+    "content_section": "There are several factors that play into how the intervals are found out:  Your activity Google’s Activity Transition API  Your sleep history We’re looking for regularities – for example “when do you usually go to sleep on Tuesdays”.  Your alarm Setting an alarm gives the app a very important hint on when you might be sleeping. We subtract your ideal sleep time from your alarm time and check whether this time is +-4 hours from the interval suggested by the other factors.  We expect your sleep to be somewhere in this interval +/- an hour or two.  So when we have found out the most probable sleep interval, we can zoom in and look at your activity with a little more precision to find when exactly do you go to sleep.  Every 15 minutes during the previously detected “probable sleep interval”, we check the state of your phone in the Google Transition API, and if we detect a still state, we start a sleep tracking service, using whatever sensors you have configured (accelerometer, sonar, wearables, …).  Also every 15 minutes we do corrections based on your activity and either stop the current sleep tracking without saving or add awake intervals if we already track for long enough.  Automatic tracking attempts are stopped quickly (~half a minute) after we recognized you are probably still awake if one of the following holds:  Awake-like activity on the phone sensor  Your phone has screen on, is in upright orientation probably hold in hands as there is a subtle shake  Awake-like activity on the watch sensor if smart watch is connected and in reach  Noise recording (and snoring detection) is enabled and talking is detected",
+    "content_section_nl": "Wekker en slaapcyclus-tracker die je zachtjes wakker maakt op het optimale moment voor aangename ochtenden.  Veel voorkomende wekkers negeren uw slaapcycli, ze maken u op tijd wakker, ongeacht of u zich momenteel in uw diepe slaap bevindt. Wakker worden uit diepe slaap is onaangenaam, het maakt je moe en het kan je productiviteit gedurende de hele dag negatief beïnvloeden.  Automatisch starten na in slaap vallen is een baanbrekende methode die is uitgevonden door Urbandroid, die de Activity Transition API van Google gebruikt als basis om te detecteren wanneer je naar bed gaat om te beginnen met het volgen van je slaap.  Ten eerste moeten we intervallen zoeken wanneer het waarschijnlijk is dat u slaapt. Standaard is het interval dat we gebruiken 20.00 uur tot 07.00 uur, maar dit zal in de loop van de tijd veranderen om uw gewoonten weer te geven.  Er zijn verschillende factoren die een rol spelen bij het vinden van de intervallen:  Jouw activiteit Google Activity Transition API  Uw slaapgeschiedenis We zijn op zoek naar regelmaat - bijvoorbeeld 'wanneer ga je normaal gesproken op dinsdag slapen'.  Je alarm Het instellen van een alarm geeft de app een heel belangrijke hint wanneer je misschien slaapt. We trekken uw ideale slaaptijd af van uw alarmtijd en controleren of deze tijd + -4 uur is van het interval dat door de andere factoren wordt gesuggereerd.  We verwachten dat je slaap ergens in dit interval +/- een uur of twee zal zijn.  Dus als we het meest waarschijnlijke slaapinterval hebben gevonden, kunnen we inzoomen en je activiteit met wat meer precisie bekijken om te bepalen wanneer je precies gaat slapen.  Elke 15 minuten tijdens het eerder gedetecteerde \"waarschijnlijke slaapinterval\", controleren we de status van uw telefoon in de Google Transition API, en als we een stilstaande toestand detecteren, starten we een slaapvolgservice, met behulp van de sensoren die u hebt geconfigureerd (versnellingsmeter, sonar, wearables, ...).  Ook doen we elke 15 minuten correcties op basis van uw activiteit en stoppen we de huidige slaapregistratie zonder op te slaan of voegen we wekelijkse intervallen toe als we al lang genoeg bijhouden.  Automatische volgpogingen worden snel gestopt (~ een halve minuut) nadat we hebben vastgesteld dat u waarschijnlijk nog steeds wakker bent als een van de volgende situaties zich voordoet:  Awake-achtige activiteit op de telefoonsensor  Je telefoon heeft een scherm aan, staat rechtop en houdt waarschijnlijk de handen vast omdat er een subtiele trilling is  Wakker wordende activiteit op de horlogesensor als smartwatch is aangesloten en binnen handbereik is  Geluidsopname (en snurkdetectie) is ingeschakeld en praten wordt gedetecteerd",
+    "created_at": null,
+    "updated_at": "2020-06-10 17:16:45"
+  },
+  {
+    "id": 10,
+    "name": "intro",
+    "page": "privacy",
+    "content_section": "What is collected: The bug report contains the user’s email address, his locale, version and name of the used software, device firmware version and a portion of the device log.\n\nSending of a debug report requires user action (needs to be explicitly send from the user’s mail application) and user may review all the information before sending and decide whether they want to share it with us or not.\n\nWe do not ask for explicit consent as we consider collecting bug report data via email to be a legitimate interest under GDPR.\n\nHow it is used by us: We use information enclosed in the bug report to provide direct customer support and to help improve the quality of our services and applications and analyse\n\nThird parties involved: We use Google GMail (email service) and Help Scout (email helpdesk service) to handle and store email and bug reports. Place of processing is USA.\n\nHow to modify or delete the information: Request modification or deletion on our email.\n\nHow to opt-out from future communications: Sending of a debug report requires user action (needs to be explicitly send from the user’s mail application), so there is no need to opt out. We aren’t initiating any communication by ourselves.\n\nData retention: The bug reports and conversations related to an app are kept for the lifetime of the app (i.e. as long as the app is publicly offered).",
+    "content_section_nl": "What is collected: The bug report contains the user’s email address, his locale, version and name of the used software, device firmware version and a portion of the device log.\n\nSending of a debug report requires user action (needs to be explicitly send from the user’s mail application) and user may review all the information before sending and decide whether they want to share it with us or not.\n\nWe do not ask for explicit consent as we consider collecting bug report data via email to be a legitimate interest under GDPR.\n\nHow it is used by us: We use information enclosed in the bug report to provide direct customer support and to help improve the quality of our services and applications and analyse\n\nThird parties involved: We use Google GMail (email service) and Help Scout (email helpdesk service) to handle and store email and bug reports. Place of processing is USA.\n\nHow to modify or delete the information: Request modification or deletion on our email.\n\nHow to opt-out from future communications: Sending of a debug report requires user action (needs to be explicitly send from the user’s mail application), so there is no need to opt out. We aren’t initiating any communication by ourselves.\n\nData retention: The bug reports and conversations related to an app are kept for the lifetime of the app (i.e. as long as the app is publicly offered).",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 11,
+    "name": "title",
+    "page": "privacy",
+    "content_section": "Privacy policy",
+    "content_section_nl": "Privacy policy (nederlands)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 12,
+    "name": "analytics",
+    "page": "privacy",
+    "content_section": "What is collected: The bug report contains the user’s email address, his locale, version and name of the used software, device firmware version and a portion of the device log.\n\nSending of a debug report requires user action (needs to be explicitly send from the user’s mail application) and user may review all the information before sending and decide whether they want to share it with us or not.\n\nWe do not ask for explicit consent as we consider collecting bug report data via email to be a legitimate interest under GDPR.\n\nHow it is used by us: We use information enclosed in the bug report to provide direct customer support and to help improve the quality of our services and applications and analyse\n\nThird parties involved: We use Google GMail (email service) and Help Scout (email helpdesk service) to handle and store email and bug reports. Place of processing is USA.\n\nHow to modify or delete the information: Request modification or deletion on our email.\n\nHow to opt-out from future communications: Sending of a debug report requires user action (needs to be explicitly send from the user’s mail application), so there is no need to opt out. We aren’t initiating any communication by ourselves.\n\nData retention: The bug reports and conversations related to an app are kept for the lifetime of the app (i.e. as long as the app is publicly offered).",
+    "content_section_nl": "What is collected: The bug report contains the user’s email address, his locale, version and name of the used software, device firmware version and a portion of the device log.\n\nSending of a debug report requires user action (needs to be explicitly send from the user’s mail application) and user may review all the information before sending and decide whether they want to share it with us or not.\n\nWe do not ask for explicit consent as we consider collecting bug report data via email to be a legitimate interest under GDPR.\n\nHow it is used by us: We use information enclosed in the bug report to provide direct customer support and to help improve the quality of our services and applications and analyse\n\nThird parties involved: We use Google GMail (email service) and Help Scout (email helpdesk service) to handle and store email and bug reports. Place of processing is USA.\n\nHow to modify or delete the information: Request modification or deletion on our email.\n\nHow to opt-out from future communications: Sending of a debug report requires user action (needs to be explicitly send from the user’s mail application), so there is no need to opt out. We aren’t initiating any communication by ourselves.\n\nData retention: The bug reports and conversations related to an app are kept for the lifetime of the app (i.e. as long as the app is publicly offered).",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 13,
+    "name": "ads_non_personal",
+    "page": "privacy",
+    "content_section": "What is collected: The bug report contains the user’s email address, his locale, version and name of the used software, device firmware version and a portion of the device log.\n\nSending of a debug report requires user action (needs to be explicitly send from the user’s mail application) and user may review all the information before sending and decide whether they want to share it with us or not.\n\nWe do not ask for explicit consent as we consider collecting bug report data via email to be a legitimate interest under GDPR.\n\nHow it is used by us: We use information enclosed in the bug report to provide direct customer support and to help improve the quality of our services and applications and analyse\n\nThird parties involved: We use Google GMail (email service) and Help Scout (email helpdesk service) to handle and store email and bug reports. Place of processing is USA.\n\nHow to modify or delete the information: Request modification or deletion on our email.\n\nHow to opt-out from future communications: Sending of a debug report requires user action (needs to be explicitly send from the user’s mail application), so there is no need to opt out. We aren’t initiating any communication by ourselves.\n\nData retention: The bug reports and conversations related to an app are kept for the lifetime of the app (i.e. as long as the app is publicly offered).",
+    "content_section_nl": "What is collected: The bug report contains the user’s email address, his locale, version and name of the used software, device firmware version and a portion of the device log.\n\nSending of a debug report requires user action (needs to be explicitly send from the user’s mail application) and user may review all the information before sending and decide whether they want to share it with us or not.\n\nWe do not ask for explicit consent as we consider collecting bug report data via email to be a legitimate interest under GDPR.\n\nHow it is used by us: We use information enclosed in the bug report to provide direct customer support and to help improve the quality of our services and applications and analyse\n\nThird parties involved: We use Google GMail (email service) and Help Scout (email helpdesk service) to handle and store email and bug reports. Place of processing is USA.\n\nHow to modify or delete the information: Request modification or deletion on our email.\n\nHow to opt-out from future communications: Sending of a debug report requires user action (needs to be explicitly send from the user’s mail application), so there is no need to opt out. We aren’t initiating any communication by ourselves.\n\nData retention: The bug reports and conversations related to an app are kept for the lifetime of the app (i.e. as long as the app is publicly offered).",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 14,
+    "name": "ads_personal",
+    "page": "privacy",
+    "content_section": "What is collected: The bug report contains the user’s email address, his locale, version and name of the used software, device firmware version and a portion of the device log.\n\nSending of a debug report requires user action (needs to be explicitly send from the user’s mail application) and user may review all the information before sending and decide whether they want to share it with us or not.\n\nWe do not ask for explicit consent as we consider collecting bug report data via email to be a legitimate interest under GDPR.\n\nHow it is used by us: We use information enclosed in the bug report to provide direct customer support and to help improve the quality of our services and applications and analyse\n\nThird parties involved: We use Google GMail (email service) and Help Scout (email helpdesk service) to handle and store email and bug reports. Place of processing is USA.\n\nHow to modify or delete the information: Request modification or deletion on our email.\n\nHow to opt-out from future communications: Sending of a debug report requires user action (needs to be explicitly send from the user’s mail application), so there is no need to opt out. We aren’t initiating any communication by ourselves.\n\nData retention: The bug reports and conversations related to an app are kept for the lifetime of the app (i.e. as long as the app is publicly offered).",
+    "content_section_nl": "What is collected: The bug report contains the user’s email address, his locale, version and name of the used software, device firmware version and a portion of the device log.\n\nSending of a debug report requires user action (needs to be explicitly send from the user’s mail application) and user may review all the information before sending and decide whether they want to share it with us or not.\n\nWe do not ask for explicit consent as we consider collecting bug report data via email to be a legitimate interest under GDPR.\n\nHow it is used by us: We use information enclosed in the bug report to provide direct customer support and to help improve the quality of our services and applications and analyse\n\nThird parties involved: We use Google GMail (email service) and Help Scout (email helpdesk service) to handle and store email and bug reports. Place of processing is USA.\n\nHow to modify or delete the information: Request modification or deletion on our email.\n\nHow to opt-out from future communications: Sending of a debug report requires user action (needs to be explicitly send from the user’s mail application), so there is no need to opt out. We aren’t initiating any communication by ourselves.\n\nData retention: The bug reports and conversations related to an app are kept for the lifetime of the app (i.e. as long as the app is publicly offered).",
+    "created_at": null,
+    "updated_at": null
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "migration": "2014_10_12_000000_create_users_table",
+    "batch": 1
+  },
+  {
+    "id": 2,
+    "migration": "2014_10_12_100000_create_password_resets_table",
+    "batch": 1
+  },
+  {
+    "id": 3,
+    "migration": "2019_08_19_000000_create_failed_jobs_table",
+    "batch": 1
+  },
+  {
+    "id": 4,
+    "migration": "2020_05_24_234610_create_contents_table",
+    "batch": 1
+  },
+  {
+    "id": 5,
+    "migration": "2020_06_03_200255_create_donations_table",
+    "batch": 1
+  },
+  {
+    "id": 6,
+    "migration": "2020_06_04_231549_create_posts_table",
+    "batch": 1
+  }
+]

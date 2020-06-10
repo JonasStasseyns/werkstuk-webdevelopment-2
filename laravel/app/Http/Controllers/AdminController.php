@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Content;
+use App\Donation;
 use App\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -18,6 +19,12 @@ class AdminController extends Controller
             'pages' => $pages,
             'posts' => $posts
         ]);
+    }
+
+    public function getDonationIndex()
+    {
+        $donations = Donation::all();
+        return view('admin.donations-index', compact('donations'));
     }
 
     public function getPostsIndex()

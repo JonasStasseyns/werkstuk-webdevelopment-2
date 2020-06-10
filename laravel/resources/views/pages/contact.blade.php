@@ -31,13 +31,14 @@
                 </form>
                 <div class="newsletter-form-container">
                     <h1>Perhaps you'd like to subscribe to our newsletter?</h1>
-                    <form action="{{ route('contact.subscribe') }}" method="post">
+                    <form action="{{ route('contact.subscribe') }}" method="post" class="donate-form-form">
                         <div class="form-group">
                             <label for="exampleInputEmail">Email</label>
-                            <input type="email" name="user_email" id="exampleInputEmail" class="form-control">
+                            <input type="email" name="user_email" id="exampleInputEmail" class="form-control"
+                                   placeholder="email">
                         </div>
                         {{ csrf_field() }}
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <input type="submit" value="Subscribe">
                     </form>
                 </div>
             @endif

@@ -41,7 +41,7 @@ class AdminController extends Controller
 
     public function updateEdit(Request $r)
     {
-        $content = Content::where('name', '=', $r->name)->first();
+        $content = Content::where('name', '=', $r->name)->where('page', '=', $r->page)->first();
         $content->content_section = $r->content_section;
         $content->content_section_nl = $r->content_section_nl;
         $content->save();

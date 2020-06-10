@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Newsletter;
 
 class ContactController extends Controller
 {
@@ -12,6 +13,14 @@ class ContactController extends Controller
     public function getIndex()
     {
         return view('pages.contact');
+    }
+
+    public function subscribe(Request $request)
+    {
+        if (!Newsletter::isSubscribed($request->user_email)) {
+            Newsletter::subscribe($request->user_email);
+        }
+        return view('pages.contact', ['message' => 'You have been subscribed successfully.']);
     }
 
     public function sendMail(Request $r)

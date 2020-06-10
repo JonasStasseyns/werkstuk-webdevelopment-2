@@ -20,6 +20,7 @@ Route::get('/privacy', 'ContentController@getPrivacyPolicy')->name('privacy');
 
 Route::get('/contact', 'ContactController@getIndex')->name('contact');
 Route::post('/contact', 'ContactController@sendMail')->name('contact.send');
+Route::post('/contact/subscribe', 'ContactController@subscribe')->name('contact.subscribe');
 
 Route::get('/blog', 'PostsController@getIndex')->name('blog.index');
 Route::get('/blog/new', 'PostsController@getCreate')->name('blog.create');

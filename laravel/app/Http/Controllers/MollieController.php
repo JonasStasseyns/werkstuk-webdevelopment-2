@@ -4,13 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Donation;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Mollie\Laravel\Facades\Mollie;
 
 class MollieController extends Controller
 {
     public function getIndex()
     {
-        $donations = Donation::all();
+        $donations = DB::table('donations')->orderBy('sum', 'desc')->get();
         return view('donations.donate', compact('donations'));
     }
 
@@ -51,7 +52,7 @@ class MollieController extends Controller
         $donation->last_name = $r->last_name;
         $donation->email = $r->email;
         $donation->message = $r->message;
-        $donation->public = $r->public;
+        $donation->public = ($r->public == null) ? 'off' : 'on';
         $donation->payment_id = $payment->id;
         $donation->sum = $r->sum;
 
@@ -81,6 +82,6 @@ class MollieController extends Controller
 
     public function paymentSuccess()
     {
-        //TODO Redirect maken
+        return view('donations.donate-form', ['message' => 'Payment was successful. Thank you for your donation!']);
     }
 }

@@ -43,6 +43,7 @@ class AdminController extends Controller
     {
         $content = Content::where('name', '=', $r->name)->first();
         $content->content_section = $r->content_section;
+        $content->content_section_nl = $r->content_section_nl;
         $content->save();
         return redirect()->route('admin.edit', ['page' => $r->page, 'name' => $r->name]);
     }

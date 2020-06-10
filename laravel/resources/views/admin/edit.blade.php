@@ -17,6 +17,9 @@
                         <label>{{$content->page . ' // ' . $content->name}}
                             <input type="text" name="content_section" value="{{$content->content_section}}">
                         </label>
+                        <label>{{$content->page . ' // ' . $content->name . '_nl'}}
+                            <input type="text" name="content_section_nl" value="{{$content->content_section_nl}}">
+                        </label>
                         <input type="submit" value="Update">
                     </form>
                 </div>
